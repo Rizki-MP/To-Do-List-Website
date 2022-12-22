@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- REMIXICONS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Portfolio-Simple</title>
+    </head>
+    <body>
+        <!-- TODOLIST -->
+        <div id="parentcontainer">
+            <div class="container-scroll">
+                <div class="container-box">
+                    <h1>Today</h1>
+                    <section id="createTodo">
+                        <h3>Create Tags</h3>
+                        <form>
+                            <label for="nameTodo">Name Todo</label><br>
+                            <input id="nameTodo" type="text" placeholder="" name="nameTodo" required><br>
+
+                            <label for="dateTodo">Date</label><br>
+                            <input id="dateTodo" type="date" placeholder="" name="dateTodo" required><br>
+
+                            <button type="submit"><b>+ Create Tags</b></button>
+                        </form>
+                        <hr>
+                    </section>
+                    <section id="addTodo">
+                        <section id="checkboxTodo">
+                            <input type="checkbox" name="">
+                        </section>
+                        <section id="textTodo">
+                            <p id="textTitle"> Coding</p>
+                            <p id="textDate">12/12/2022</p>
+                        </section>
+                        <section id="deleteTodo">
+                            <p id="textDeleteTodo">DELETE</p>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- END TODOLIST -->
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

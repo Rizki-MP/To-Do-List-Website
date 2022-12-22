@@ -1,0 +1,188 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* VARIABLES CSS */
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: rgb(240, 254, 255);
+  --two-color: rgb(240, 176, 117);
+  --black-color: rgb(30, 25, 21);
+  --text-color: rgb(173, 166, 159);
+  --body-color: rgb(255, 84, 158);
+
+  /* FONT AND TYPOGRAPHY */
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --h3-font-size: 1.125rem;
+  --smaller-font-size: .75rem;
+}
+
+/* BASE */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-image: url("../img/backroundblur.jpg");
+  height: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* membuat background dari scrollbar */
+/* kasih warna transparan agar lebih estetik  */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+
+/* membuat styling pada batang atau bar scrollbar  */
+/* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+/* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+/* START */
+#parentcontainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.container-scroll {
+  width: 380px;
+  height: 550px;
+  background: var(--first-color);
+  border-radius: 30px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px 10px;
+  padding-left: 15px;
+  padding-top: 35px;
+}
+
+.container-box {
+  height: 100%;
+  overflow: auto;
+  padding: 0 18px;
+}
+
+#createTodo input {
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    background-color: white;
+    color: #999999;
+    width: 100%;
+} 
+
+#createTodo h3 {
+  font-weight: 400;
+  color: #262626;
+}
+
+#createTodo label {
+    font-size: 13px;
+    color: #999999;
+}
+
+#createTodo #dateTodo {
+  cursor: pointer;
+}
+
+#createTodo hr {
+  margin-top: 8px;
+}
+
+#createTodo button {
+    cursor: pointer;
+    width: 120px;
+    padding: 5px 0;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: #2979ff;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
+#addTodo {
+  background-color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #a1cccb;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#addTodo #checkboxTodo {
+  width: 10%;
+}
+
+#addTodo #checkboxTodo input {
+  cursor: pointer;
+}
+
+#addTodo #textTodo {
+  width: 70%;
+  text-align: left;
+}
+
+#addTodo #deleteTodo {
+  width: 20%;
+}
+
+#addTodo #deleteTodo p {
+  color: red;
+  font-weight: 500;
+}
+
+#addTodo #textTodo {
+  width: 90%;
+  text-align: left;
+}
+
+#addTodo #textDate {
+  color: #616161;
+  font-size: 13px;
+  margin-top: 8px;
+}
+/* END */
