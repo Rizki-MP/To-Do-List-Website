@@ -129,9 +129,9 @@ img {
   margin-top: 8px;
 }
 
-#createTodo button {
+#createTodo #submitTodo {
     cursor: pointer;
-    width: 120px;
+    width: 190px;
     padding: 5px 0;
     border: none;
     font-size: 17px;
@@ -142,7 +142,7 @@ img {
 }
 
 
-#addTodo {
+.addTodo {
   background-color: white;
   padding: 10px 15px;
   margin-top: 10px;
@@ -153,36 +153,40 @@ img {
   cursor: pointer;
 }
 
-#addTodo #checkboxTodo {
+.addTodo #checkboxTodo {
   width: 10%;
 }
 
-#addTodo #checkboxTodo input {
+.addTodo #checkboxTodo input {
   cursor: pointer;
 }
 
-#addTodo #textTodo {
+.addTodo #textTodo {
   width: 70%;
   text-align: left;
 }
 
-#addTodo #deleteTodo {
+.addTodo #deleteTodo {
   width: 20%;
 }
 
-#addTodo #deleteTodo p {
+.addTodo #deleteTodo p {
   color: red;
   font-weight: 500;
 }
 
-#addTodo #textTodo {
+.addTodo #textTodo {
   width: 90%;
   text-align: left;
 }
 
-#addTodo #textDate {
+.addTodo #textDate {
   color: #616161;
   font-size: 13px;
   margin-top: 8px;
+}
+
+.coret {
+  background-color: #b3fbff;
 }
 /* END */
